@@ -89,6 +89,10 @@ nav a:hover {
   background-image: linear-gradient(to right, var(--pink), var(--white), var(--pink));
 }
 
+model-viewer {
+  z-index: 0;
+}
+
 .designheader {
   height: 75%;
   width: 100%;
