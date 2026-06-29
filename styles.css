@@ -24,14 +24,14 @@ h1 {
   text-align: left;
   font-family: 'plus';
   color: var(--supaku);
-  font-size: 48px;
+  font-size: 36pt;
   margin: 0;
   margin-left: 20px;
 }
 
 h3 {
   font-family: 'plus';
-  font-size: 24px;
+  font-size: 24pt;
   font-weight: 450;
   color: var(--white);
   margin: 0;
