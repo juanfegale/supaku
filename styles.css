@@ -1,0 +1,101 @@
+:root {
+  --supaku: #6c1460;
+  --white: #ffffff;
+  --black: #000000;
+  --pink: #dbc6d8;
+}
+
+@font-face {
+  font-family: plus;
+  src: url(source/fonts/MPLUS1-VariableFont_wght.ttf);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  text-align: left;
+  font-family: 'plus';
+  color: var(--supaku);
+  font-size: 48px;
+  margin: 0;
+  margin-left: 20px;
+}
+
+h3 {
+  font-family: 'plus';
+  font-size: 24px;
+  font-weight: 450;
+  color: var(--white);
+  margin: 0;
+  margin-left: 15px;
+}
+
+p {
+  font-family: "plus";
+  font-weight: 500;
+}
+
+nav {
+  background-color: var(--supaku);
+  width: auto;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+nav div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 6px;
+  padding-bottom: 8px;
+  margin: 0;
+  margin-left: 10px;
+  border-radius: 20px;
+  font-family: 'plus';
+  text-decoration: none;
+  outline: 3px;
+  outline-style: solid;
+  outline-color: var(--supaku);
+  transition: 0.3s;
+  z-index: 1;
+}
+
+nav a:hover {
+  background-color: var(--pink);
+}
+
+.loadscreen {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, var(--pink), var(--white), var(--pink));
+}
+
+footer {
+  background-color: var(--supaku);
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
