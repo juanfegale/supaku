@@ -32,7 +32,7 @@ h3 {
   font-weight: 450;
   color: var(--white);
   margin: 0;
-  margin-left: 15px;
+  text-align: center;
 }
 
 p {
@@ -47,7 +47,6 @@ nav {
   padding: 5px;
   display: flex;
   flex-flow: column;
-  align-items: center;
   z-index: 2;
 }
 
@@ -124,6 +123,10 @@ footer {
     text-align: left;
   }
 
+  h3 {
+    margin-left: 15px;
+  }
+
   nav {
     flex-flow: row;
     align-items: center;
@@ -131,6 +134,7 @@ footer {
     position: sticky;
     top: 0;
     height: 40px;
+    text-align: left;
   }
 
   nav div {
