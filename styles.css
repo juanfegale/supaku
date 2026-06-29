@@ -24,7 +24,7 @@ h1 {
   text-align: left;
   font-family: 'plus';
   color: var(--supaku);
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 0;
   margin-left: 20px;
 }
@@ -92,10 +92,58 @@ nav a:hover {
   background-image: linear-gradient(to right, var(--pink), var(--white), var(--pink));
 }
 
+.designheader {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.designheader div {
+  width: 40%;
+  height: 100%;
+}
+.designheader iframe {
+  width: 60%;
+  height: 100%;
+}
+
 footer {
   background-color: var(--supaku);
   width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+
+@media (max-width: 760px) {
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  nav {
+    flex-flow: column;
+    position: unset;
+    height: 70px;
+    
+  }
+
+  nav div {
+    margin-top: 10px;
+  }
+  
+  .designheader {
+    flex-flow: column;
+  }
+
+  .designheader div {
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+  }
+  .designheader iframe {
+    width: 100%;
+    height: 60%;
+  }
 }
