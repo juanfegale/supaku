@@ -47,10 +47,6 @@ nav {
   padding: 5px;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
 }
 
 nav div {
@@ -128,6 +124,10 @@ footer {
 
   nav {
     flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
     height: 40px;
   }
 
