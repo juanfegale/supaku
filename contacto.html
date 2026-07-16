@@ -13,31 +13,44 @@
     ></script>
     </head>
     <body>
-        <nav>
-            <h3>supaku</h3>
-            <div>
-              <a href="index.html">inicio</a>
-              <a href="proyectos.html">proyectos</a>
-              <a href="diseno.html">diseño</a>
-              <a href="mascota.html">mascota</a>
-              <a href="contacto.html">contacto</a>
-            </div>
+      <nav>
+          <h3>supaku</h3>
+          <div>
+            <a href="index.html">inicio</a>
+            <a href="diseno.html">diseño</a>
+            <a href="contacto.html">contacto</a>
+          </div>
             
-        </nav>
-        <div class="loadscreen">
-      <model-viewer
-        src="source/models/supaku.glb"
-        auto-rotate
-        rotation-per-second="300%"
-        auto-rotate-delay="0"
-        camera-orbit="0deg 90deg 105%"
-        style="width: 100%; height: 300px; z-index: 0;"
-        poster="source/images/icon.svg"
-      ></model-viewer>
-      <p style="color: var(--supaku);">este contenido se encuentra en desarrollo</p>
-    </div>
-    <footer>
+      </nav>
+      <div class="contacto">
+        <h2 style="color: var(--supaku);">contáctanos</h2><br>
+        <img src="source/images/hi.png" alt="supa saludo" id="supahi">
+        <a href="https://mail.google.com" target="_blank">jgaleanoro@unal.edu.co</a>
+        <a href="https://web.whatsapp.com" target="_blank">+57 319 372####</a>
+      </div>
+
+      <div class="equipo">
+        <h2 style="color: var(--white);">equipo</h2><br>
+        <div class="team">
+          <div class="textframe">
+            <img src="source/images/Texture pfp.png" alt="JF" style="border-radius: 50%; margin: 10px;"><br>
+            <div class="card">
+              <h3 style="font-weight: 600;">JF</h3>
+              <p style="text-align: center; color: var(--white);">@who_is_JF_</p>
+            </div>
+          </div>
+          <div class="textframe">
+            <img src="source/images/cutepfp.png" alt="Supa" style="border-radius: 50%; margin: 10px;"><br>
+            <div class="card">
+              <h3 style="font-weight: 600;">Supa</h3>
+              <p style="text-align: center; color: var(--white);">@brujitasupaku</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer style="border-top: 2px; border-color: var(--white); border-top-style: solid;">
         <p style="color: var(--white); font-weight: 400;">JuanFe Galeano - Taller: identidad e imagen coordinada - 2026</p>
-    </footer>
+      </footer>
     </body>
 </html>

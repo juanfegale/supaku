@@ -13,31 +13,92 @@
     ></script>
     </head>
     <body>
-        <nav>
-            <h3>supaku</h3>
-            <div>
-              <a href="index.html">inicio</a>
-              <a href="proyectos.html">proyectos</a>
-              <a href="diseno.html">diseño</a>
-              <a href="mascota.html">mascota</a>
-              <a href="contacto.html">contacto</a>
-            </div>
+      <nav>
+          <h3>supaku</h3>
+          <div>
+            <a href="index.html">inicio</a>
+            <a href="diseno.html">diseño</a>
+            <a href="contacto.html">contacto</a>
+          </div>
             
-        </nav>
-        <div class="loadscreen">
-      <model-viewer
+      </nav>
+      <div class="banner">
+        <video src="source/images/sonido.mp4" autoplay id="introvid"></video>
+        <div>
+          <h1 style="font-size: 3em;">ideas mágicas<br>魔法のアイデア</h1>
+        </div>
+      </div>
+
+      <div style="padding: 20px;">
+        <p style="text-align: center;">Somos una marca enfocada en construir identidades visuales para consolas de videojuegos. <br><br>
+        Entendemos el juego como una experiencia que el jugador siente mágica en sus primeros intentos, y queremos transmitir este pensamiento en nuestro modo de trabajo, donde cada idea nace como una chispa.</p>
+      </div>
+
+      <div class="valores">
+        <h2 style="color: var(--supaku);">nuestros valores</h2>
+        <div class="textframe">
+          <h3 style="color: var(--supaku); font-weight: 700;">misión</h3>
+          <p style="text-align: center;">Ayudar a las consolas más pequeñas a construir una identidad visual única que les ayude a crecer, enfocándonos en la experiencia de usuario que brindan sus interfaces y la personalidad que muestran en medios externos.</p>
+        </div>
+        <div class="textframe">
+          <h3 style="color: var(--supaku); font-weight: 700;">visión</h3>
+          <p style="text-align: center;">Llegar a ser un estandar de la industria, aún ayuadndo a los productos emergentes a hacerse un lugar en el mercado a la vez que colaboramos con las marcas más fuertes del nicho y sus nuevas propuestas.</p>
+        </div>
+      </div>
+      <div class="valores" style="justify-content: right; background-image: linear-gradient(var(--pink), var(--supaku));">
+        <img src="source/images/plis.png" alt="supa manos juntas" id="supaplis">
+      </div>
+
+      <div class="servicios">
+        <h2 style="color: var(--white); font-weight: 500;">servicios</h2><br>
+        <div class="textframe">
+          <h3 style="color: var(--supaku); font-weight: 600;">modelado 3d</h3>
+          <model-viewer src="source/models/Huron.glb" style="width: 100%; background-color: var(--black);" camera-controls touch-action="pan-y"></model-viewer>
+          <h3 style="color: var(--supaku); font-weight: 600;">3Dモデリング</h3>
+        </div><br>
+        <div class="textframe">
+          <h3 style="color: var(--supaku); font-weight: 600;">programación</h3>
+          <img src="source/images/codigo.png" alt="código cs en visual studio" width="100%">
+          <h3 style="color: var(--supaku); font-weight: 600;">プログラミング</h3>
+        </div><br>
+        <div class="textframe">
+          <h3 style="color: var(--supaku); font-weight: 600;">animación</h3>
+          <video src="source/images/final.mkv" autoplay loop muted style="width: 100%;"></video>
+          <h3 style="color: var(--supaku); font-weight: 600;">アニメーション</h3>
+        </div><br>
+      </div>
+      
+      <div class="loadscreen">
+        <model-viewer
         src="source/models/supaku.glb"
         auto-rotate
         rotation-per-second="300%"
         auto-rotate-delay="0"
         camera-orbit="0deg 90deg 105%"
-        style="width: 100%; height: 300px; z-index: 0;"
+        style="width: 100%; height: 300px; z-index: 0; cursor: progress;"
         poster="source/images/icon.svg"
-      ></model-viewer>
-      <p style="color: var(--supaku);">este contenido se encuentra en desarrollo</p>
-    </div>
-    <footer>
+        ></model-viewer>
+        <p style="color: var(--supaku);">este contenido se encuentra en desarrollo</p>
+      </div>
+        <footer>
         <p style="color: var(--white); font-weight: 400;">JuanFe Galeano - Taller: identidad e imagen coordinada - 2026</p>
-    </footer>
+      </footer>
+
+      <script>
+        const video = document.getElementById("introvid");
+
+        video.addEventListener("click", () => {
+          if (video.paused) {
+            video.play();
+          }
+        })
+        video.addEventListener("pointerover", () => {
+          if (video.paused) {
+            video.style.cursor = "pointer";
+          } else {
+            video.style.cursor = "default";
+          }
+        })
+      </script>
     </body>
 </html>
